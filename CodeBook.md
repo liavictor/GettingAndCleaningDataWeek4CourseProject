@@ -40,9 +40,10 @@ library(dplyr)
 
 ## final step to save the tidy dataset in the local working folder as tidydata.txt.
 
-Tidy data contains 180 rows ((30 subjects X 6 activities)) and 68 columns. Each row has averaged variables for each subject and each.
+Tidy data contains 180 rows ((30 subjects X 6 activities)) and 68 columns. Each row has averaged variables for each subject and each activity,
 
 The 68 columns with mean and sd plus Subjecid and Activity:
+
  [1] "SubjectID"                                     
  [2] "Activity"                                      
  [3] "timeBodyAccelerometer-mean()-X"                
