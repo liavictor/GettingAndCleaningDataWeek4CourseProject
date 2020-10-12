@@ -75,7 +75,6 @@ finalDataSet <- select(OneDataSet, mean_sd_vars)
 
 
 ## 4. Appropriately labels the data set with descriptive variable names
-
 names(finalDataSet)<-gsub("^t", "time", names(finalDataSet))
 names(finalDataSet)<-gsub("^f", "frequency", names(finalDataSet))
 names(finalDataSet)<-gsub("Acc", "Accelerometer", names(finalDataSet))
