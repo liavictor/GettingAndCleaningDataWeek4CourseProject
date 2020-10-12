@@ -85,7 +85,7 @@ names(finalDataSet)<-gsub("BodyBody", "Body", names(finalDataSet))
 ## 5. From the data set in step 4, creates a second, independent tidy data set 
 # with the average of each variable for each activity and each subject.
 
-SecondDataSet<-aggregate(. ~SubjectID + Activity, OneDataSet, mean)
+SecondDataSet<-aggregate(. ~SubjectID + Activity, finalDataSet, mean)
 SecondDataSet<-SecondDataSet[order(SecondDataSet$SubjectID,SecondDataSet$Activity),]
 
 # final step to save the tidy dataset in the local working folder
