@@ -60,7 +60,7 @@ colnames(sAll) <- "SubjectID"
 yAll_alabels <- left_join(yAll, aLabels, "ActivityID")
 yAll_a <-yAll_alabels[2]
 
-# step 1-3 Merging all datasets into one set
+# step 1-4 Merging all datasets into one set
 OneDataSet <-cbind(sAll, yAll_a, xAll)
 
 
